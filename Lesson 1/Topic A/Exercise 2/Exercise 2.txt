@@ -13,6 +13,7 @@ mkdir canis/familiaris
 mkdir canis/lupus 
 mkdir canis/lupus/lupus 
 mkdir --parents panthera/tigris 
+mkdir panthera/leo 
 mkdir leopardus/colocolo/pajeros 
 mkdir -p leopardus/colocolo/pajeros 
 
