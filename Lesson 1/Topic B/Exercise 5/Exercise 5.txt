@@ -1,0 +1,38 @@
+# Make sure you're in the parent of the Lesson1 folder
+# "Type" means type those keystrokes, see lesson content for details
+# None of the auto completed commands are actually to be executed, 
+# Cancel each completed command with ^C or clear the command line before proceeding to the next "Type" step
+
+
+# Run this to go into the folder that was made before
+cd Lesson1/TopicB/animals 
+
+
+# Type: cd SPACE canis / TAB TAB TAB 
+# Type: f TAB 
+robin ~/Lesson1/TopicB/animals $ cd canis/lupus/familiaris/ 
+
+
+# Type: les TAB 
+robin ~/Lesson1/TopicB/animals $ less 
+
+
+# Type: rmd TAB 
+robin ~/Lesson1/TopicB/animals $ rmdir 
+
+
+# Type: r TAB TAB
+robin ~/Lesson1/TopicB/animals $ r 
+# Display all 144 possibilities? (y or n) 
+
+
+# Type: ls --col TAB 
+robin ~/Lesson1/TopicB/animals $ ls --color 
+
+# Type: ls --re TAB 
+robin ~/Lesson1/TopicB/animals $ ls --re  
+--recursive  --reverse  
+
+# Type: c TAB 
+robin ~/Lesson1/TopicB/animals $ ls --recursive 
+

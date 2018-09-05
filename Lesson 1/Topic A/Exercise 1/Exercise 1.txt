@@ -1,4 +1,4 @@
- # Step 1 has no commands
+ # Step 1 has no commands - ensure that a Lesson1 folder exists (here assumed to be within the home dir)
 
 
  # Step 2

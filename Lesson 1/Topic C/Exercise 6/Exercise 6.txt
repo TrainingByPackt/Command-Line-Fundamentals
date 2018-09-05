@@ -1,0 +1,40 @@
+ # Wildcards and globbing - ensure that Lesson1_TopicC.zip exists in the Lesson1 folder (ass)
+ 
+ #  Step 1
+cd Lesson1  
+unzip -q Lesson1_TopicC.zip  
+cd TopicC 
+
+
+ #  Step 2
+ls *.gif 
+
+
+ #  Step 3
+mkdir gif  
+mv *.gif gif  
+ls *.gif  
+ls gif/  
+
+
+ #  Step 4
+mkdir jpeg  
+mv *.jpeg *.jpg jpeg  
+
+
+ #  Step 5
+ls *.jpeg *.jpg  
+ls jpeg  
+
+
+ #  Step 6
+ls *.so.?  
+ls google*.*  
+
+
+ #  Step 7
+ls a?c*.*  
+
+
+ #  Step 8
+ls !(*.jpg)  

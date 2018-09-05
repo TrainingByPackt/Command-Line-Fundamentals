@@ -1,0 +1,16 @@
+ # Make sure youre in Lesson1 folder
+ # "Type" means type those keystrokes, see lesson content for details
+
+mkdir TopicB  
+cd TopicB  
+
+
+ # Type: PGUP ^Sfa^S^S ENTER 
+mkdir -p canis/lupus/familiaris 
+ 
+
+ # Type: UP-ARROW 
+mkdir -p canis/lupus/familiaris 
+
+ # Now edit the the last word alone to get next command 
+mkdir -p canis/lupus/lupus 

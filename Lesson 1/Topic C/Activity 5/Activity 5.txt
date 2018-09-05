@@ -1,0 +1,11 @@
+ # Activity 5 solution - Directory wildcards
+ # Navigate to the trees data folder unzipped in TopicA
+
+ # Read the file counts for each tree command
+
+tree p*/?a* 
+
+tree p*/?i*/?u* 
+
+tree t*/t* 
+

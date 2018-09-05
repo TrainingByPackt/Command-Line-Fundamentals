@@ -1,0 +1,18 @@
+# In this activity, A list of keystrokes to accomplish the task is provided. Everything is to be typed literally
+
+data.txt
+Ctrl+W
+
+Pinaceae Cedrus Deodara
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+
+Cupressaceae Thuja Aphylla
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+
+Taxaceae Taxus Baccata
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+
+Podocarpaceae Podocarpus Alba
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+
+  

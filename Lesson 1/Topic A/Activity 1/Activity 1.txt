@@ -2,37 +2,37 @@
 
 
 # Solution 1
-robin ~ $ cd ~
-robin ~ $ cd Lesson1
-robin ~/Lesson1 $ cd data
-robin ~/Lesson1/data $ cd pinaceae/cedrus/deodara/
-robin ~/Lesson1/data/pinaceae/cedrus/deodara $ less data.txt
+cd ~
+cd Lesson1
+cd data
+cd pinaceae/cedrus/deodara/
+less data.txt
 robin ~/Lesson1/data/pinaceae/cedrus/deodara $
 
 
 # Solution 2
-robin ~ $ cd ~
-robin ~ $ cd Lesson1/
-robin ~/Lesson1 $ cd data/
-robin ~/Lesson1/data $ cd pinaceae/abies/pindrow/
-robin ~/Lesson1/data/pinaceae/abies/pindrow $ less data.txt
+cd ~
+cd Lesson1/
+cd data/
+cd pinaceae/abies/pindrow/
+less data.txt
 # Type /derives from <ENTER> 
 # Read the answer on that line
 
 
 # Solution 3
-robin ~ $ cd ~
-robin ~ $ cd Lesson1/
-robin ~/Lesson1 $ cd data/
-robin ~/Lesson1/data $ cd taxaceae/taxus/
-robin ~/Lesson1/data/taxaceae/taxus $ tree -d
+cd ~
+cd Lesson1/
+cd data/
+cd taxaceae/taxus/
+tree -d
 
 
 # Solution 4
-robin ~ $ cd ~
-robin ~ $ cd Lesson1/
-robin ~/Lesson1 $ cd data/
-robin ~/Lesson1/data $ tree -d
+cd ~
+cd Lesson1/
+cd data/
+tree -d
 
 
 
