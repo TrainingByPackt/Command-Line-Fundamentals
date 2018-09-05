@@ -1,0 +1,35 @@
+# Assuming we start from the the home directory in each case, and Lesson1 folder is in it
+
+
+# Solution 
+cd ~
+cd Lesson1/
+mkdir activity2
+cd data/taxaceae/torreya/
+ls
+
+cp californica/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/californica.txt
+
+cp fargesii/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/fargesii.txt
+
+cp grandis/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/grandis.txt
+
+cp jackii/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/jackii.txt
+
+cp nucifera/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/nucifera.txt
+
+cp parvifolia/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/parvifolia.txt
+
+cp taxifolia/data.txt ../../../activity2/
+mv ../../../activity2/data.txt ../../../activity2/taxifolia.txt
+
+
+cd ~
+cd Lesson1/activity2/
+ls -la
