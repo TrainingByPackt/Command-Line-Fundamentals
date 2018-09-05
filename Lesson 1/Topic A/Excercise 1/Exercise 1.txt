@@ -1,0 +1,59 @@
+# Step 1 has no commands
+
+
+# Step 2
+robin ~ $ cd Lesson1 
+robin ~/Lesson1 $ ls 
+
+# Step 3 (The zip named file below should have been downloaded manually into this folder)
+robin ~/Lesson1 $ unzip -q Lesson1_TopicA.zip 
+robin ~/Lesson1 $ ls 
+
+# Step 4
+robin ~/Lesson1 $ cd data 
+robin ~/Lesson1/data $ ls 
+robin ~/Lesson1/data $ ls taxaceae podocarpaceae 
+robin ~/Lesson1/data $ ls -l --color 
+
+# Step 5
+robin ~/Lesson1/data/taxaceae $ tree -d 
+
+# Step 6
+robin ~/Lesson1/data/taxaceae $ cd taxus
+robin ~/Lesson1/data/taxaceae/taxus $ cd - 
+
+# Step 7
+robin ~/Lesson1/data/taxaceae $ cd ../../.. 
+robin ~ $ cd - 
+robin ~/Lesson1/data/taxaceae $
+
+# Step 8
+robin ~/Lesson1/data/taxaceae $ cd 
+robin ~ $ cd - 
+robin ~/Lesson1/data/taxaceae $
+
+# Step 9
+robin ~/Lesson1/data/taxaceae $ pwd 
+
+# Step 10
+robin ~/Lesson1/data/taxaceae $ pushd taxus/baccata/ 
+robin ~/Lesson1/data/taxaceae/taxus/baccata $ pushd ../sumatrana/
+robin ~/Lesson1/data/taxaceae/taxus/sumatrana $  pushd ../../../pinaceae/cedrus/deodara/ 
+robin ~/Lesson1/data/pinaceae/cedrus/deodara $
+
+# Step 11
+robin ~/Lesson1/data/pinaceae/cedrus/deodara $ popd 
+robin ~/Lesson1/data/taxaceae/taxus/sumatrana $ popd 
+robin ~/Lesson1/data/taxaceae/taxus/baccata $ popd 
+robin ~/Lesson1/data/taxaceae $ popd 
+
+
+# Step 12
+robin ~/Lesson1/data/taxaceae $ cd taxus/baccata 
+robin ~/Lesson1/data/taxaceae/taxus/baccata $ cat data.txt  
+
+# Step 13
+robin ~/Lesson1/data/taxaceae/taxus/baccata $ ls -l 
+robin ~/Lesson1/data/taxaceae/taxus/baccata $ less data.txt
+
+
