@@ -3,7 +3,6 @@
 
  # Step 1
 cd Lesson1
-ls
 
 
  # Step 2
@@ -13,10 +12,11 @@ mkdir canis
 mkdir canis/familiaris 
 mkdir canis/lupus 
 mkdir canis/lupus/lupus 
+mkdir leopardus/colocolo/pajeros 
+
+mkdir -p leopardus/colocolo/pajeros 
 mkdir --parents panthera/tigris 
 mkdir panthera/leo 
-mkdir leopardus/colocolo/pajeros 
-mkdir -p leopardus/colocolo/pajeros 
 
 
  # Step 3
