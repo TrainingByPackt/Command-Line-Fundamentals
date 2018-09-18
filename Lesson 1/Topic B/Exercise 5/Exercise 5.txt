@@ -10,29 +10,29 @@ cd Lesson1/TopicB/animals
 
 # Type: cd SPACE canis / TAB TAB TAB 
 # Type: f TAB 
-robin ~/Lesson1/TopicB/animals $ cd canis/lupus/familiaris/ 
+cd canis/lupus/familiaris/ 
 
 
 # Type: les TAB 
-robin ~/Lesson1/TopicB/animals $ less 
+less 
 
 
 # Type: rmd TAB 
-robin ~/Lesson1/TopicB/animals $ rmdir 
+rmdir 
 
 
 # Type: r TAB TAB
-robin ~/Lesson1/TopicB/animals $ r 
+r 
 # Display all 144 possibilities? (y or n) 
 
 
 # Type: ls --col TAB 
-robin ~/Lesson1/TopicB/animals $ ls --color 
+ls --color 
 
-# Type: ls --re TAB 
-robin ~/Lesson1/TopicB/animals $ ls --re  
+# Type: ls --re TAB TAB
+ls --re  
 --recursive  --reverse  
 
 # Type: c TAB 
-robin ~/Lesson1/TopicB/animals $ ls --recursive 
+ls --recursive 
 

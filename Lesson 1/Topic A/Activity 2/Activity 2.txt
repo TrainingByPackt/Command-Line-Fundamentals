@@ -32,4 +32,4 @@ mv ../../../activity2/data.txt ../../../activity2/taxifolia.txt
 
 cd ~
 cd Lesson1/activity2/
-ls -la
+ls -l

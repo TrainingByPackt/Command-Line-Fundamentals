@@ -5,12 +5,20 @@ mkdir TopicB
 cd TopicB  
 
 
- # Type: PGUP ^Sfa^S^S ENTER 
+ # Type: ^Ranimals^R^R ENTER 
+mkdir animals
+
+
+ # Type: ESC < ^Sfa^S^S ENTER 
 mkdir -p canis/lupus/familiaris 
  
 
  # Type: UP-ARROW 
 mkdir -p canis/lupus/familiaris 
 
+
  # Now edit the the last word alone to get next command 
 mkdir -p canis/lupus/lupus 
+
+
+

@@ -96,6 +96,9 @@ tree panthers
 
  # Step 15
 tree dogs 
+
+
+ # Step 16
 rm dogs/fido.txt 
 rm dogs/wolf.txt 
 rm dogs/canis/lupus/familiaris/dog.txt 
@@ -103,17 +106,16 @@ rm dogs/canis/lupus/lupus/wolf.txt
 tree dogs 
 
 
- # Step 16
+ # Step 17
 ls 
 rm -r dogs 
 ls 
 
 
- # Step 17
-rm -r -i panthers 
-
-
  # Step 18
+rm -r -i panthers 
+ls
+
 rm -r -I bigcats 
 ls 
 

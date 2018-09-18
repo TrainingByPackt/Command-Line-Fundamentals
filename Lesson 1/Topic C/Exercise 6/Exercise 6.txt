@@ -20,21 +20,31 @@ ls gif/
  #  Step 4
 mkdir jpeg  
 mv *.jpeg *.jpg jpeg  
-
-
- #  Step 5
 ls *.jpeg *.jpg  
+
+ 
+ #  Step 5
 ls jpeg  
 
 
  #  Step 6
 ls *.so.?  
-ls google*.*  
 
 
  #  Step 7
-ls a?c*.*  
+ls google*.*  
 
 
  #  Step 8
-ls !(*.jpg)  
+ls a?c*.*  
+
+
+ #  Step 9
+ls !(*.jpg)
+
+
+ # Step 10
+ 
+ cd..
+ rm -r TopicC
+ 
