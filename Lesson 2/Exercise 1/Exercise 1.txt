@@ -1,0 +1,53 @@
+# Exercise 1: Redirection
+
+ # Step 1
+cd Lesson1/data 
+ls -l 
+
+ # Step 2
+ls -l >dir.txt
+cat dir.txt 
+
+ # Step 3
+ls -l nonexistent >dir.txt 
+ls -l 
+
+ # Step 4
+ls -l pinaceae/ >dir.txt 
+ls -l taxaceae/ >>dir.txt
+cat dir.txt 
+
+ # Step 5
+ls -l nonexistent taxaceae 2>dir.txt
+cat dir.txt
+
+ # Step 6
+ls pinaceae nosuchthing >out.txt 2>err.txt
+
+ # Step 7
+ls pinaceae nothing &>dir.txt 
+cat dir.txt 
+
+ # Step 8
+sort <pinaceae/pinus/sylvestris/data.txt >sorted.txt
+cat sorted.txt
+
+ # Step 9
+cat 
+Hello 
+Hello
+Bye
+Bye
+^D 
+
+ # Step 10
+cat <<DONE 
+> This is some text 
+> Some more text 
+> OK, enough 
+> DONE 
+
+ # Step 11
+bc <<< 1234^7
+4357186184021382204544
+

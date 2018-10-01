@@ -1,0 +1,19 @@
+tail -n+2 land.csv | sort >sorted.txt
+
+cat -n sorted.txt >numbered.txt
+
+cat -T numbered.txt | head -n3
+
+tr "," "\t" <numbered.txt >tabbed.txt
+
+cat -T tabbed.txt | head -n2
+
+join  -o1.4,1.5,1.3 tabbed.txt tabbed.txt >342.txt
+
+join  -o1.5,1.4,1.2 tabbed.txt tabbed.txt >431.txt
+
+head 342.txt
+
+head 431.txt
+
+

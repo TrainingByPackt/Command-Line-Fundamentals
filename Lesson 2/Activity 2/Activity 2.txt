@@ -1,0 +1,19 @@
+grep "Australia" land.csv >australia.txt
+
+sort -k4 -t, -n australia.txt -o austral-ia.txt
+
+wc -l australia.txt
+
+bc <<< 55/2
+
+cat -n australia.txt | grep " 27"
+
+grep "1998" population.csv >pop.txt
+
+sort -k4 -t, -n pop.txt -o pop.txt
+
+wc -l pop.txt
+
+bc <<< 259/2
+
+cat -n pop.txt | grep " 129"
