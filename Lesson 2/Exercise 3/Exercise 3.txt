@@ -31,57 +31,53 @@ less land.csv
 
 
  # Step 8
-grep Austria <land.csv
+grep 'Austria' <land.csv
 
 
  # Step 9
-grep Austria <land.csv | grep 20
+grep 'Austria' <land.csv | grep 20
 
 
  # Step 10
-grep Austria <land.csv | grep ,20
+grep 'Austria' <land.csv | grep ,20
+grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]'
 
 
  # Step 11
-grep Austria <land.csv | grep ,20 | cut -d, --complement -f2
+grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
 
 
  # Step 12
-grep Austria <land.csv | grep ,20 | cut -d, --complement -f2 --output-delimiter=$'\t'
+grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
 
 
  # Step 13
-grep Austria <land.csv | grep ,20 | cut -d, --complement -f2 --output-delimiter=$'\t' | sed 's/\t20/\t/'
-
-
- # Step 14
-grep Austria <land.csv | grep ,20 >austria.txt
+grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]' >austria.txt
 cut -d,  -f3 <austria.txt >year.txt
 cut -d,  -f4 <austria.txt >percent.txt
 
- # Step 15
+
+ # Step 14
 paste -d' ' percent.txt year.txt
 
- # Step 16
+
+ # Step 15
 paste -d' ' percent.txt year.txt | sort 
 
 
- # Step 17
+ # Step 16
 less payroll.tsv
-cut -f3,4 payroll.tsv | grep -v "First" | sort >names.tsv
+cut -f3,4 payroll.tsv | grep -v 'First' | sort >names.tsv
 
 
- # Step 18
+ # Step 17
 wc -l names.tsv
- # 562013 names.tsv
-
+ 
+ 
+ # Step 18
+uniq names.tsv | wc -l
+ 
  
  # Step 19
-uniq names.tsv | wc -l
- # 410141
-
- 
- # Step 20
 uniq -u names.tsv | wc -l
- # 301174
-
+ 

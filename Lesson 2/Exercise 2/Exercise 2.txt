@@ -7,7 +7,6 @@ cd Lesson1/data
 tree | less 
 
  # Step 3
-Type the following command to view the output of ls in uppercase:
 ls | tr [:lower:] [:upper:] 
 
  # Step 4

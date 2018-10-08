@@ -29,25 +29,27 @@ ls pinaceae nothing &>dir.txt
 cat dir.txt 
 
  # Step 8
-sort <pinaceae/pinus/sylvestris/data.txt >sorted.txt
-cat sorted.txt
+cat -n <pinaceae/pinus/sylvestris/data.txt >numbered.txt
+less numbered.txt
 
  # Step 9
 cat 
 Hello 
-Hello
 Bye
-Bye
-^D 
+ # press ^D
 
  # Step 10
 cat <<DONE 
-> This is some text 
-> Some more text 
-> OK, enough 
-> DONE 
+This is some text 
+Some more text 
+OK, enough 
+DONE 
 
  # Step 11
 bc <<< 1234^7
-4357186184021382204544
+ # 4357186184021382204544
+ 
+ # Step 12
+rm *.txt
+
 

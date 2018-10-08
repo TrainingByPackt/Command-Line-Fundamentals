@@ -33,17 +33,17 @@ join -t$'\t' --check-order -o auto -e 'UNKNOWN' -a1 -a2 land.txt pop.txt |less
 
 
  # Step 7
-robin ~/Lesson2 $ <names.tsv uniq -c | sort -n -r | head 
+<names.tsv uniq -c | sort -n -r | head 
  
 
  # Step 8
-robin ~/Lesson2 $ <names.tsv uniq -c | sort -n -r >namecounts.txt
+<names.tsv uniq -c | sort -n -r >namecounts.txt
 
 
  # Step 9
-robin ~/Lesson2 $ grep -w "SMITH" namecounts.txt | less
+grep -w "SMITH" namecounts.txt | less
 
 
  # Step 10
-robin ~/Lesson2 $ grep -w "SMITH" namecounts.txt | tac | head -n5
+grep -w "SMITH" namecounts.txt | tac | head -n5
 
