@@ -41,9 +41,9 @@ join -t$'\t' --check-order -o auto -e 'UNKNOWN' -a1 -a2 land.txt pop.txt |less
 
 
  # Step 9
-grep -w "SMITH" namecounts.txt | less
+grep -w 'SMITH' namecounts.txt | less
 
 
  # Step 10
-grep -w "SMITH" namecounts.txt | tac | head -n5
+grep -w 'SMITH' namecounts.txt | tac | head -n5
 

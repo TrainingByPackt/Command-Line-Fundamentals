@@ -6,6 +6,5 @@ tail -n+28 australia.txt | head -n1
 grep -w '1998' population.csv >pop.txt
 sort -k4 -t, -n pop.txt -o pop.txt
 wc -l pop.txt
-bc <<< 259/2
-tail -n+130 pop.txt | head -n1
-
+bc <<< 249/2
+head -n125 pop.txt | tail -n1

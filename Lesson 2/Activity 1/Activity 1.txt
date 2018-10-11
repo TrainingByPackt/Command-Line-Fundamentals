@@ -4,7 +4,7 @@ cat -n sorted.txt >numbered.txt
 
 cat -T numbered.txt | head -n3
 
-tr "," "\t" <numbered.txt >tabbed.txt
+tr ',' '\t' <numbered.txt >tabbed.txt
 
 cat -T tabbed.txt | head -n2
 

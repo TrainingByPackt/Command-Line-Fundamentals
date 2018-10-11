@@ -40,19 +40,19 @@ grep 'Austria' <land.csv | grep 20
 
  # Step 10
 grep 'Austria' <land.csv | grep ,20
-grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]'
+grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]'
 
 
  # Step 11
-grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
+grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
 
 
  # Step 12
-grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
+grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
 
 
  # Step 13
-grep 'Austria' <land.csv | grep -E -w '20[[:digit:]][[:digit:]]' >austria.txt
+grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' >austria.txt
 cut -d,  -f3 <austria.txt >year.txt
 cut -d,  -f4 <austria.txt >percent.txt
 
