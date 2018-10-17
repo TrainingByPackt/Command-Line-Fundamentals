@@ -1,0 +1,21 @@
+NAME=RUMPELSTILTSKIN
+LEN=$(wc -c <<< $NAME)
+echo \{$LEN..0}
+
+eval echo \{$LEN..0}
+
+echo '${NAME:{$LEN..0}:1}'
+
+echo '\$\{NAME:{$LEN..0}\:1\}'
+
+eval echo '\$\{NAME:{$LEN..0}\:1\}'
+
+echo '\\$\\{NAME:{$LEN..1}\\:0\\}'
+
+eval echo '\\$\\{NAME:{$LEN..0}\\:1\\}'
+
+eval eval echo '\\$\\{NAME:{$LEN..0}\\:1\\}'
+
+eval eval eval echo '\\$\\{NAME:{$LEN..0}\\:1\\}'
+
+tr -d ' ' <<< $(eval eval eval echo '\\$\\{NAME:{$LEN..0}\\:1\\}')

@@ -1,0 +1,81 @@
+  # Step 1 
+NAME=Robin
+echo Hello $NAME
+
+
+  # Step 2 
+NAME=Robin echo Hello $NAME
+
+
+  # Step 3 
+echo The answer is $((74088 / 42 / 42 + 42 - 42))
+
+
+  # Step 4 
+echo The answer is $((2 * 3 + 4 * 5))
+
+
+  # Step 5 
+A=1 B=1 C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+A=$B B=$C C=$((A + B)) && echo $A
+
+
+  # Step 6 
+mkdir test && cd test
+echo {a..c}/{1..3}
+mkdir -p {a..c}/{1..3}
+tree
+cd ..
+
+
+  # Step 7 
+echo The special cards in a deck are {'ace','king','queen','jack'}{' of spade,',' of dia-mond,',' of club,',' of heart,'}
+
+ 
+  # Step 8 
+wc markdown.txt
+OUTPUT=$(wc markdown.txt)
+echo $OUTPUT
+OUTPUT=($OUTPUT)
+echo ${OUTPUT[@]}
+WORDS=${OUTPUT[1]}
+CHARS=${OUTPUT[2]}
+echo Average chars per word is $((CHARS / WORDS))
+
+
+  # Step 9 
+echo The exact average is $(bc <<< "scale=2; $CHARS / $WORDS ")
+
+
+  # Step 10 
+ANSWER=42
+QUESTION=ANSWER
+WHAT=QUESTION
+echo ${WHAT}
+echo \${${WHAT}}
+eval echo \${${WHAT}}
+echo $(eval echo \${${WHAT}})
+echo \${$(eval echo \${${WHAT}})}
+eval echo \${$(eval echo \${${WHAT}})}
+
+ 
+  # Step 11 
+cd ~/Lesson2
+
+
+  # Step 12 
+cp payroll.tsv 1.txt ; cp payroll.tsv 2.txt ; cp payroll.tsv 3.txt
+sort payroll.tsv >log.txt
+sort -m log.txt <(sort 1.txt) <(sort 2.txt) <(sort 3.txt) >sortmerge.txt
+
+
+  # Step 13 
+rm *.txt
+rm -r test

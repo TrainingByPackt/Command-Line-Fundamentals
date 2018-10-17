@@ -1,0 +1,25 @@
+  # Exercise 1: Using Command Lists
+
+  # Step 1 
+cd ~/Lesson2
+
+  # Step 2 
+time sort payroll.tsv >sorted.txt
+
+  # Step 3 
+time (sort payroll.tsv >sorted.txt ; sort -k2 payroll.tsv >sorted2.txt)
+
+
+  # Step 4 
+time (sort payroll.tsv >sorted.txt & sort -k2 payroll.tsv >sorted2.txt)
+
+
+ # Step 5 
+time (sort payroll.tsv >sorted.txt ; sort -k2 payroll.tsv >sorted2.txt ;  sort -k3 payroll.tsv >sorted3.txt)
+time (sort payroll.tsv >sorted.txt & sort -k2 payroll.tsv >sorted2.txt &  sort -k3 payroll.tsv >sorted3.txt)
+
+  # Step 6 
+grep -q 'WALDO' payroll.tsv && echo 'Found'
+
+  # Step 7 
+grep -q 'PINOCCHIO' payroll.tsv || echo 'Not Found'
