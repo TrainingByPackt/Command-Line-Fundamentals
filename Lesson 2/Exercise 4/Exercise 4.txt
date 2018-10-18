@@ -1,4 +1,4 @@
-Exercise 4 - Transformation commands:
+ # Exercise 4 - Transformation commands:
 
  # Step 1
 head -n5 population.csv

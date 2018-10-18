@@ -13,7 +13,7 @@ ls | tr 'a-z' 'A-Z'
 
 
  # Step 4
-ls | tr aeiou AEIOU
+ls | tr 'aeiou' 'AEIOU'
 
 
  # Step 5
@@ -31,24 +31,24 @@ less land.csv
 
 
  # Step 8
-grep 'Austria' <land.csv
+grep -w 'Austria' <land.csv
 
 
  # Step 9
-grep 'Austria' <land.csv | grep 20
+grep -w 'Austria' <land.csv | grep '20'
 
 
  # Step 10
-grep 'Austria' <land.csv | grep ,20
-grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]'
+grep -w 'Austria' <land.csv | grep ',20'
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]'
 
 
  # Step 11
-grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
 
 
  # Step 12
-grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
 
 
  # Step 13

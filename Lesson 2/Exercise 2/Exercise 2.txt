@@ -7,10 +7,10 @@ cd Lesson1/data
 tree | less 
 
  # Step 3
-ls | tr [:lower:] [:upper:] 
+ls | tr '[:lower:]' '[:upper:]' 
 
  # Step 4
-tree | tr [:lower:] [:upper:] | less
+tree | tr '[:lower:]' '[:upper:]' | less
 
  # Step 5
 cd pinaceae/nothotsuga/longibracteata/ 
@@ -18,12 +18,12 @@ sort <data.txt | uniq | less
 
 
  # Step 6
-tr [:lower:] [:upper:] <data.txt | sort | uniq >test.txt 
+tr '[:lower:]' '[:upper:]' <data.txt | sort | uniq >test.txt 
 less test.txt 
 rm test.txt
 
 
  # Step 7
-cd ../../..
+cd -
 ls -R . nosuchthing |& less
 

@@ -23,6 +23,8 @@ cat dir.txt
 
  # Step 6
 ls pinaceae nosuchthing >out.txt 2>err.txt
+cat out.txt
+cat err.txt
 
  # Step 7
 ls pinaceae nothing &>dir.txt 
@@ -43,7 +45,7 @@ cat <<DONE
 This is some text 
 Some more text 
 OK, enough 
-DONE 
+DONE
 
  # Step 11
 bc <<< 1234^7
