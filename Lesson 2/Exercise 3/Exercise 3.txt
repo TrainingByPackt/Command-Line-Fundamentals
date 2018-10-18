@@ -62,7 +62,7 @@ paste -d' ' percent.txt year.txt
 
 
  # Step 15
-paste -d' ' percent.txt year.txt | sort 
+paste -d' ' percent.txt year.txt | sort -n
 
 
  # Step 16
