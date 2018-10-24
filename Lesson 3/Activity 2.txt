@@ -1,8 +1,10 @@
 NAME=RUMPELSTILTSKIN
-LEN=$(wc -c <<< $NAME)
-echo \{$LEN..0}
+LEN=${#NAME}
+LEN=$((LEN-1))
 
-eval echo \{$LEN..0}
+echo {$LEN..0}
+
+eval echo {$LEN..0}
 
 echo '${NAME:{$LEN..0}:1}'
 
