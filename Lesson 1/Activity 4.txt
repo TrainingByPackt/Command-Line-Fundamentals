@@ -1,7 +1,7 @@
  # Activity 4 - group files by extension
  # Navigate to TopicC folder unzipped earlier
 
-
+cd ~/Lesson1/data1
 mkdir images
 mkdir binaries
 mkdir misc

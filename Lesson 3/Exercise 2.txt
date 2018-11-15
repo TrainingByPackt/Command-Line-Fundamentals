@@ -14,10 +14,10 @@ grep -R --color -E '[0-9]{2}-[0-9]{2} m '
   # Step 4 
 (grep -q -E '^[a-z][a-z0-9_]{,9}$' <<< 'hunter2' && echo 'Valid')  || echo 'Invalid'
 (grep -q -E '^[a-z][a-z0-9_]{,9}$' <<< 'hunter222' && echo 'Valid')  || echo 'Invalid'
-(grep -q -E '^[a-z][a-z0-9_]{0,9}$' <<< '2hunter' && echo 'Valid')  || echo 'Invalid'
-(grep -q -E '^[a-z][a-z0-9_]{0,9}$' <<< 'Hunter22' && echo 'Valid')  || echo 'Invalid'
-(grep -q -E '^[a-z][a-z0-9_]{0,9}$' <<< 'hunter%2' && echo 'Valid')  || echo 'Invalid'
-(grep -q -E '^[a-z][a-z0-9_]{0,9}$' <<< 'hunter12345678' && echo 'Valid')  || echo 'Invalid'
+(grep -q -E '^[a-z][a-z0-9_]{,9}$' <<< '2hunter' && echo 'Valid')  || echo 'Invalid'
+(grep -q -E '^[a-z][a-z0-9_]{,9}$' <<< 'Hunter22' && echo 'Valid')  || echo 'Invalid'
+(grep -q -E '^[a-z][a-z0-9_]{,9}$' <<< 'hunter%2' && echo 'Valid')  || echo 'Invalid'
+(grep -q -E '^[a-z][a-z0-9_]{,9}$' <<< 'hunter12345678' && echo 'Valid')  || echo 'Invalid'
 
   # Step 5 
 (grep -q -w -E '^\([[:digit:]]{3}\)$' <<< '(123)' && echo 'Valid')  || echo 'Invalid'
@@ -27,7 +27,7 @@ grep -R --color -E '[0-9]{2}-[0-9]{2} m '
   # Step 6 
 cd ~/Lesson3
 unzip -q Lesson3.zip
-
+  
   # Step 7 
 cat markdown.txt
 grep --color -E '\*\*([a-z]+)\*\*' <markdown.txt

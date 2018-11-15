@@ -1,9 +1,7 @@
  # Wildcards and globbing - ensure that Lesson1_TopicC.zip exists in the Lesson1 folder (ass)
  
  #  Step 1
-cd Lesson1  
-unzip -q Lesson1_TopicC.zip  
-cd TopicC 
+cd Lesson1/data1  
 
 
  #  Step 2
@@ -13,38 +11,48 @@ ls *.gif
  #  Step 3
 mkdir gif  
 mv *.gif gif  
-ls *.gif  
-ls gif/  
 
 
  #  Step 4
-mkdir jpeg  
-mv *.jpeg *.jpg jpeg  
-ls *.jpeg *.jpg  
+ls *.gif  
 
- 
+
  #  Step 5
-ls jpeg  
+ls gif/  
 
 
  #  Step 6
-ls *.so.?  
+mkdir jpeg  
+mv *.jpeg *.jpg jpeg  
 
 
  #  Step 7
-ls google*.*  
+ls *.jpeg *.jpg  
 
-
+ 
  #  Step 8
-ls a?c*.*  
+ls jpeg  
 
 
  #  Step 9
+ls *.so.?  
+
+
+ #  Step 10
+ls google*.*  
+
+
+ #  Step 11
+ls a?c*.*  
+
+
+ #  Step 12
 ls !(*.jpg)
 
 
- # Step 10
+ # Step 13
  
- cd..
- rm -r TopicC
+mv gif/* .
+mv jpeg/* .
+rm -r gif jpeg
  

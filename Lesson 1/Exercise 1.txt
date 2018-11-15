@@ -5,54 +5,50 @@
 cd Lesson1 
 ls 
 
- # Step 3 (The zip named file below should have been downloaded manually into this folder)
-unzip -q Lesson1_TopicA.zip 
 
- # Step 4
-ls 
-
- # Step 5
+ # Step 3
 cd data 
 ls 
+
 ls taxaceae podocarpaceae 
 ls -l --color 
 
- # Step 6
+ # Step 4
 cd taxaceae 
 tree -d 
 
- # Step 7
+ # Step 5
 cd taxus
 cd - 
 
- # Step 8
+ # Step 6
 cd ../../.. 
 cd - 
 
- # Step 9
+ # Step 7
 cd 
 cd - 
 
- # Step 10
+ # Step 8
 pwd 
 
- # Step 11
+ # Step 9
 pushd taxus/baccata/ 
 pushd ../sumatrana/
 pushd ../../../pinaceae/cedrus/deodara/ 
 
- # Step 12
+ # Step 10
 popd 
 popd 
 popd 
 popd 
 
 
- # Step 13
+ # Step 11
 cd taxus/baccata 
 cat data.txt  
 
- # Step 14
+ # Step 12
 ls -l 
 less data.txt
 

@@ -1,8 +1,8 @@
  # Make sure youre in Lesson1 folder
  # "Type" means type those keystrokes, see lesson content for details
 
-mkdir TopicB  
-cd TopicB  
+mkdir data1  
+cd data1  
 
 
  # Type: ^Ranimals^R^R ENTER 
