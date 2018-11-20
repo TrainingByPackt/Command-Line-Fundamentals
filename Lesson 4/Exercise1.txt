@@ -1,0 +1,39 @@
+ # Step 1
+function hf()
+{
+  local a=0
+  local b=1
+  local n=$1
+  local i=0
+  echo 0
+  echo 1
+
+  while [[ $i -lt $n ]]
+  do
+    c=$(( a + b ))
+    a=$b
+    b=$c
+    i=$(( i + 1 ))
+    echo $c
+  done
+}
+
+
+ # Step 2
+function ucase()
+{
+  tr [a-z] [A-Z] <<< "$*"
+}
+
+
+ # Step 3
+function greet()
+{
+  local timestring='night'
+  [[ $2 -ge 5  && $2 -le 11 ]] && timestring='morning'
+  [[ $2 -ge 12 && $2 -le 15 ]] && timestring='afternoon'
+  [[ $2 -ge 16 && $2 -le 21 ]] && timestring='evening'
+  
+  echo "Good ${timestring}, $1!"
+}
+

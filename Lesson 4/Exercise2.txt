@@ -1,0 +1,43 @@
+ # Step 1
+for i in {1..5}; do echo "$i: $RANDOM"; done
+
+ # Step 2
+function random_digit() { echo $(( $RANDOM % 10 )) ;}
+
+ # Step 3
+function read_digit { guess=''; read -N1 -p "Enter your guess: " guess; echo; }
+
+ # Step 4
+function guess_it()
+{
+  echo "I have thought of a random number between 0 and 9 - try to guess it in 5 tries"
+
+  local answer=$(random_digit)
+  local count=1
+  
+  while [[ $count -le 5 ]]
+  do
+  
+    read_digit
+    if [[ $guess =~ [0-9] ]]
+    then
+      if [[ $guess -eq $answer ]]
+      then
+        echo Correct answer
+        return 0
+      fi
+    
+      [[ $guess -lt $answer ]] && echo "Too Low!"
+      [[ $guess -gt $answer ]] && echo "Too High!"
+      
+      count=$(( count + 1 ))
+      
+    else
+      echo "Please enter a digit!"
+    fi
+  done
+
+  echo "Game over!"
+}
+
+guess_it
