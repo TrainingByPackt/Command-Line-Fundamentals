@@ -26,7 +26,6 @@ grep -R --color -E '[0-9]{2}-[0-9]{2} m '
 
   # Step 6 
 cd ~/Lesson3
-unzip -q Lesson3.zip
   
   # Step 7 
 cat markdown.txt
