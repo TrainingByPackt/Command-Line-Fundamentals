@@ -3,9 +3,11 @@ for i in {1..5}; do echo "$i: $RANDOM"; done
 
  # Step 2
 function random_digit() { echo $(( $RANDOM % 10 )) ;}
+for i in {1..5}; do random_digit; done
 
  # Step 3
 function read_digit { guess=''; read -N1 -p "Enter your guess: " guess; echo; }
+read_digit
 
  # Step 4
 function guess_it()

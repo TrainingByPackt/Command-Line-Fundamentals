@@ -1,14 +1,12 @@
-#!/usr/bin/env bash
+ # Step 1 to 4
 
-# This function takes two timestamp arguments in 'YYYY-MM-DD HH:MM:SS' format 
-# Prints the time difference between the two values in seconds
-# Assumes that the first timestamp precedes the second
 function trip_duration()
 {
   # Split the dates and times into an array, using space as the IFS
   IFS=' '
   local dt_start=( $1 )
   local dt_stop=( $2 )
+  
   
   # dt_start[1] and dt_stop contain the time value as HH:MM:SS
   # Split the times into HH, MM and SS, using colon as the IFS
@@ -24,4 +22,66 @@ function trip_duration()
 }
 
 
-trip_duration "$1" "$2"
+ # Step 5
+
+trip_duration '2017-10-10 12:00:00' '2017-10-10 16:00:00' 
+trip_duration '2017-10-10 12:00:00' '2017-10-10 13:59:00' 
+trip_duration '2017-10-10 12:00:00' '2017-10-10 00:00:00' 
+
+trip_duration '2017-10-10 12:00:00' '2017-10-10 00:00:00' 
+
+
+
+ # Step 6
+./taxi2.sh <nyc_taxi.csv | head -n5
+head -n5 nyc_taxi.csv 
+./taxi2.sh <nyc_taxi.csv | head -n10 
+
+
+ # Step 7 - No typing
+
+
+ # Step 8
+./taxi3.sh <nyc_taxi.csv | head -n10 
+
+
+ # Step 9 - No typing
+
+
+ # Step 10
+time head -n5000 nyc_taxi.csv | ./taxi4.sh >test.txt 
+
+
+ # Step 11 - No typing
+
+ 
+ # Step 12
+time head -n5000 nyc_taxi.csv | ./taxi5.sh >test.txt 
+
+
+ # Step 13 - No typing
+
+
+ # Step 14
+time head -n5000 nyc_taxi.csv | ./taxi6.sh >test.txt 
+
+
+ # Step 15 - No typing
+ 
+ 
+ # Step 16 - No typing
+
+ 
+ # Step 17
+time head -n5000 nyc_taxi.csv | ./taxi6.sh >test.txt 
+ 
+
+ # Step 18
+./taxi6.sh <nyc_taxi.csv >nyc_taxi2.csv 
+head -n5 nyc_taxi2.csv 
+
+
+
+ # Step 18
+wc -l nyc_taxi.csv 
+wc -l nyc_taxi2.csv 
