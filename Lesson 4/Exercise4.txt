@@ -2,7 +2,7 @@
 
 
  # Step 3
-robin ~/Lesson4 $ time head -n5000 nyc_taxi2.csv | ./taxi8.sh 
+time head -n5000 nyc_taxi2.csv | ./taxi8.sh 
 
 
  # Step 4
@@ -13,5 +13,5 @@ cut -d, -f5 < nyc_taxi2.csv | tr -d '.' >nyc_taxi_fare.csv
 
  
  # Step 8
-robin ~/Lesson4 $ time ./taxi9.sh nyc_taxi2.csv 
+time ./taxi9.sh nyc_taxi2.csv 
  

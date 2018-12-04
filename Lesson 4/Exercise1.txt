@@ -1,7 +1,7 @@
  # Step 1
 function ucase()
 {
-  tr [a-z] [A-Z] <<< "$*"
+  tr "[a-z]" "[A-Z]" <<< "$*"
 }
 
 ucase hello world
