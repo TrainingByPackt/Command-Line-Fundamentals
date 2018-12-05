@@ -10,10 +10,7 @@ Comments within the files are prefixed with " #", so that there are no issues if
 Please export HISTCONTROL=ignorespace so that the command history does not pick up any of the comments
 History needs to be maintained verbatim for some of the exercises
 
-We require that the user has created a folder called "Lesson1" and download the following files into it - these files contain test data that is used for Lesson 1 as well as future ones.
+Each lesson has its own zip file of data to be extracted in the home directory
 
-Lesson1_TopicA.zip
-Lesson1_TopicC.zip
-
-
-Additional data for future lessons will be added to the repository as the each lesson is developed
+An Open Virtualization Appliance (built for use with Virtualbox) containing a Porteus Linux distro is provided in the repository
+The VM image already contains the sample data as well as the snippets that are here.  
