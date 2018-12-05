@@ -14,9 +14,6 @@ A=$B B=$C C=$((A + B)) && echo $A
 A=$B B=$C C=$((A + B)) && echo $A
 A=$B B=$C C=$((A + B)) && echo $A
 A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
 
 
   # Step 4 

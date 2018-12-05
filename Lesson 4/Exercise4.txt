@@ -1,17 +1,15 @@
- # Step 1 to 2 - No Typing
+#  Taxi Trip Analysis - Calculating Average Trip Speed
 
 
- # Step 3
-time head -n5000 nyc_taxi2.csv | ./taxi8.sh 
-
-
- # Step 4
-cut -d, -f5 < nyc_taxi2.csv | tr -d '.' >nyc_taxi_fare.csv 
-
-
- # Step 5-7 No typing
-
+ # Step 1
+ cut -d, -f4,6 < nyc_taxi2.csv | tr -d '.' >test.txt
+ head -n5 test.txt
  
- # Step 8
-time ./taxi9.sh nyc_taxi2.csv 
+ 
+ #Step  2 to 5 - No Typing
+
+
+ # Step 6
+ ./taxi7.sh nyc_taxi2.csv
+ 
  
