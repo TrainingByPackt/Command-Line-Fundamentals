@@ -5,15 +5,17 @@
 
 
  # Step 1
-cd Lesson1/data2/animals 
+ls --col
+Press: Tab 
 
 
  # Step 2
-cd canis 
-Press: / Tab Tab Tab
- 
+ls --re
+Press: Tab Tab
 
- # Step 3 
-f
+
+ # Step 3
+c
 Press: Tab
- 
+
+

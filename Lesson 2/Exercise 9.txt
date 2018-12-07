@@ -1,78 +1,65 @@
-# Exercise 3 - Filtering commands:
-
  # Step 1
-cd Lesson1/data/
+cd Lesson1/data 
+ls -l 
 
 
  # Step 2
-ls -l | cat -n
+ls -l >dir.txt
+cat dir.txt 
 
 
  # Step 3
-ls | tr 'a-z' 'A-Z'
+ls -l nonexistent >dir.txt 
+ls -l 
 
 
  # Step 4
-ls | tr 'aeiou' 'AEIOU'
+ls -l pinaceae/ >dir.txt 
+ls -l taxaceae/ >>dir.txt
+cat dir.txt 
 
 
  # Step 5
-cd
-cd Lesson2 
-  
-  
+ls -l nonexistent taxaceae 2>dir.txt
+cat dir.txt
+
+
  # Step 6
-less land.csv
+ls pinaceae nosuchthing >out.txt 2>err.txt
+cat out.txt
+cat err.txt
 
 
  # Step 7
-grep -w 'Austria' <land.csv
+ls pinaceae nothing &>dir.txt 
+cat dir.txt 
 
 
  # Step 8
-grep -w 'Austria' <land.csv | grep '20'
+cat -n <pinaceae/pinus/sylvestris/data.txt >numbered.txt
+less numbered.txt
 
 
  # Step 9
-grep -w 'Austria' <land.csv | grep ',20'
-grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]'
+cat 
+Hello 
+Bye
+Press: ^D
 
 
  # Step 10
-grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
+cat <<DONE 
+This is some text 
+Some more text 
+OK, enough 
+DONE
 
 
  # Step 11
-grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
-
+bc <<< 1234^7
+ 
 
  # Step 12
-grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' >austria.txt
-cut -d,  -f3 <austria.txt >year.txt
-cut -d,  -f4 <austria.txt >percent.txt
+rm *.txt
 
 
- # Step 13
-paste -d' ' percent.txt year.txt
-
-
- # Step 14
-paste -d' ' percent.txt year.txt | sort -n
-
-
- # Step 15
-less payroll.tsv
-cut -f3,4 payroll.tsv | grep -v 'First' | sort >names.tsv
-
-
- # Step 16
-wc -l names.tsv
- 
- 
- # Step 17
-uniq names.tsv | wc -l
- 
- 
- # Step 18
-uniq -u names.tsv | wc -l
- 

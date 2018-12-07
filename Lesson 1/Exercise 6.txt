@@ -1,58 +1,23 @@
- # Wildcards and globbing - ensure that Lesson1_TopicC.zip exists in the Lesson1 folder (ass)
- 
- #  Step 1
-cd Lesson1/data1  
+# Make sure you're in the parent of the Lesson1 folder
+# "Press" means press those keystrokes, see lesson content for details
+# None of the auto completed commands are actually to be executed, 
+# Cancel each completed command with ^C or clear the command line before proceeding to the next "Press" step
 
 
- #  Step 2
-ls *.gif 
+ # Step 1
+les
+Press: Tab 
 
 
- #  Step 3
-mkdir gif  
-mv *.gif gif  
+ # Step 2
+rmd 
+Press: Tab 
 
 
- #  Step 4
-ls *.gif  
+ # Step 3
+r
+Press: Tab Tab
+r 
 
 
- #  Step 5
-ls gif/  
 
-
- #  Step 6
-mkdir jpeg  
-mv *.jpeg *.jpg jpeg  
-
-
- #  Step 7
-ls *.jpeg *.jpg  
-
- 
- #  Step 8
-ls jpeg  
-
-
- #  Step 9
-ls *.so.?  
-
-
- #  Step 10
-ls google*.*  
-
-
- #  Step 11
-ls a?c*.*  
-
-
- #  Step 12
-ls !(*.jpg)
-
-
- # Step 13
- 
-mv gif/* .
-mv jpeg/* .
-rm -r gif jpeg
- 

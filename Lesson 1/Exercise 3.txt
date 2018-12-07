@@ -1,24 +1,32 @@
- # Make sure youre in Lesson1 folder
- # "Type" means type those keystrokes, see lesson content for details
-
-mkdir data1  
-cd data1  
+ # "Press" means press those keystrokes. See lesson content for details.
 
 
- # Type: ^Ranimals^R^R ENTER 
+ # Step 1
+mkdir data2  
+cd data2  
+
+
+ # Step 2
+Press: ^R
+animals
+Press: ^R^R Enter 
+
+
+ # Step 3
+Press: ^R^R ENTER 
 mkdir animals
 
 
- # Type: ESC < ^Sfa^S^S ENTER 
+ # Step 4
+Press: ESC < ^Sfa^S^S Enter 
 mkdir -p canis/lupus/familiaris 
  
 
- # Type: UP-ARROW 
-mkdir -p canis/lupus/familiaris 
-
-
+ # Step 5
+Press: up arrow
  # Now edit the the last word alone to get next command 
-mkdir -p canis/lupus/lupus 
+mkdir -p canis/lupus/lupus
+Press: Enter
 
 
 

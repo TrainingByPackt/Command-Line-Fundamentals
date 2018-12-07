@@ -1,0 +1,55 @@
+ #  Step 1
+cd Lesson1/data1  
+
+
+ #  Step 2
+ls *.gif 
+
+
+ #  Step 3
+mkdir gif  
+mv *.gif gif  
+
+
+ #  Step 4
+ls *.gif  
+
+
+ #  Step 5
+ls gif/  
+
+
+ #  Step 6
+mkdir jpeg  
+mv *.jpeg *.jpg jpeg  
+
+
+ #  Step 7
+ls *.jpeg *.jpg  
+
+ 
+ #  Step 8
+ls jpeg  
+
+
+ #  Step 9
+ls *.so.?  
+
+
+ #  Step 10
+ls google*.*  
+
+
+ #  Step 11
+ls a?c*.*  
+
+
+ #  Step 12
+ls !(*.jpg)
+
+
+ # Step 13
+mv gif/* .
+mv jpeg/* .
+rm -r gif jpeg
+ 

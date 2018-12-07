@@ -1,100 +1,23 @@
-  # Step 1 
-NAME=Robin
-echo Hello $NAME
-
-
-  # Step 2 
-echo The answer is $((74088 / 42 / 42 + 42 - 42))
-echo The answer is $((2 * 3 + 4 * 5))
-
-  # Step 3 
-A=1 B=1 C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-A=$B B=$C C=$((A + B)) && echo $A
-
-
-  # Step 4 
-cd Lesson3
-mkdir test && cd test
-echo {a..c}/{1..3}
-mkdir -p {a..c}/{1..3}
-tree 
-cd ..
-
-
-  # Step 5 
-echo The special cards in a deck are {'ace','king','queen','jack'}{' of spade,',' of diamond,',' of club,',' of heart,'}
-
-
-  # Step 6
-wc markdown.txt
-
-
-  # Step 7 
-OUTPUT=$(wc markdown.txt)
-echo $OUTPUT
-
-  # Step 8 
-OUTPUT=($OUTPUT)
-echo ${OUTPUT[@]}
-
-  # Step 9 
-WORDS=${OUTPUT[1]}
-CHARS=${OUTPUT[2]}
-
-  # Step 10 
-echo Average chars per word is $((CHARS / WORDS))
-
-
-  # Step 11 
-echo The exact average is $(bc <<< "scale=2; $CHARS / $WORDS ")
-
-  # Step 12 
-ANSWER=42
-QUESTION=ANSWER
-WHAT=QUESTION
-
-  # Step 13
-echo ${WHAT}
-
-
-  # Step 14 
-echo \${${WHAT}}
-
-
-  # Step 15 
-eval echo \${${WHAT}}
-
-
-  # Step 16 
-echo $(eval echo \${${WHAT}})
-echo \${$(eval echo \${${WHAT}})}
-
-
-  # Step 17 
-eval echo \${$(eval echo \${${WHAT}})}
-
-
-  # Step 18 
+ # Step 1 
 cd ~/Lesson2
 
+ # Step 2 
+time sort payroll.tsv >sorted.txt
 
-  # Step 19 
-cp payroll.tsv 1.txt ; cp payroll.tsv 2.txt ; cp payroll.tsv 3.txt
-
-
-  # Step 20
-sort payroll.tsv >log.txt
+ # Step 3 
+time (sort payroll.tsv >sorted.txt ; sort -k2 payroll.tsv >sorted2.txt)
 
 
-  # Step 21 
-sort -m log.txt <(sort 1.txt) <(sort 2.txt) <(sort 3.txt) >sortmerge.txt
+ # Step 4 
+time (sort payroll.tsv >sorted.txt & sort -k2 payroll.tsv >sorted2.txt)
 
 
-  # Step 22
-ls *.txt
-rm *.txt
-rm -r ../Lesson3/test
+ # Step 5 
+time (sort payroll.tsv >sorted.txt ; sort -k2 payroll.tsv >sorted2.txt ;  sort -k3 payroll.tsv >sorted3.txt)
+time (sort payroll.tsv >sorted.txt & sort -k2 payroll.tsv >sorted2.txt &  sort -k3 payroll.tsv >sorted3.txt)
+
+ # Step 6 
+grep -q 'WALDO' payroll.tsv && echo 'Found'
+
+ # Step 7 
+grep -q 'PINOCCHIO' payroll.tsv || echo 'Not Found'

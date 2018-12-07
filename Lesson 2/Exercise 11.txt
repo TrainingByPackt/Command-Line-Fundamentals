@@ -1,0 +1,76 @@
+ # Step 1
+cd Lesson1/data/
+
+
+ # Step 2
+ls -l | cat -n
+
+
+ # Step 3
+ls | tr 'a-z' 'A-Z'
+
+
+ # Step 4
+ls | tr 'aeiou' 'AEIOU'
+
+
+ # Step 5
+cd
+cd Lesson2 
+  
+  
+ # Step 6
+less land.csv
+
+
+ # Step 7
+grep -w 'Austria' <land.csv
+
+
+ # Step 8
+grep -w 'Austria' <land.csv | grep '20'
+
+
+ # Step 9
+grep -w 'Austria' <land.csv | grep ',20'
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]'
+
+
+ # Step 10
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2
+
+
+ # Step 11
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --complement -f2 --output-delimiter=$'\t'
+
+
+ # Step 12
+grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' >austria.txt
+cut -d,  -f3 <austria.txt >year.txt
+cut -d,  -f4 <austria.txt >percent.txt
+
+
+ # Step 13
+paste -d' ' percent.txt year.txt
+
+
+ # Step 14
+paste -d' ' percent.txt year.txt | sort -n
+
+
+ # Step 15
+less payroll.tsv
+cut -f3,4 payroll.tsv | grep -v 'First' | sort >names.tsv
+
+
+ # Step 16
+wc -l names.tsv
+ 
+ 
+ # Step 17
+uniq names.tsv | wc -l
+ 
+ 
+ # Step 18
+uniq -u names.tsv | wc -l
+ 

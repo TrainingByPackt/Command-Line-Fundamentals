@@ -1,49 +1,31 @@
- # Exercise 4 - Transformation commands:
-
  # Step 1
-head -n5 population.csv
+cd Lesson1/data
 
 
  # Step 2
-cut -f1 -d, population.csv >p1.txt
-cut -f3 -d, population.csv >p3.txt
-cut -f4 -d, population.csv >p4.txt
+tree | less 
 
 
  # Step 3
-paste -d$'/\t' p1.txt p3.txt p4.txt >p134.txt
-head -n5 p134.txt
+ls | tr '[:lower:]' '[:upper:]' 
 
 
  # Step 4
-cut -f1 -d, land.csv >l1.txt
-cut -f3 -d, land.csv >l3.txt
-cut -f4 -d, land.csv >l4.txt
-paste -d$'/\t' l1.txt l3.txt l4.txt >l134.txt
-head -n 5 l134.txt
+tree | tr '[:lower:]' '[:upper:]' | less
 
 
  # Step 5
-tail -n+2 l134.txt | sort >land.txt
-tail -n+2 p134.txt | sort >pop.txt 
+cd pinaceae/nothotsuga/longibracteata/ 
+sort <data.txt | uniq | less 
 
- 
+
  # Step 6
-join -t$'\t' --check-order -o auto -e 'UNKNOWN' -a1 -a2 land.txt pop.txt |less
+tr '[:lower:]' '[:upper:]' <data.txt | sort | uniq >test.txt 
+less test.txt 
+rm test.txt
 
 
  # Step 7
-<names.tsv uniq -c | sort -n -r | head 
- 
-
- # Step 8
-<names.tsv uniq -c | sort -n -r >namecounts.txt
-
-
- # Step 9
-grep -w 'SMITH' namecounts.txt | less
-
-
- # Step 10
-grep -w 'SMITH' namecounts.txt | tac | head -n5
+cd -
+ls -R . nosuchthing |& less
 

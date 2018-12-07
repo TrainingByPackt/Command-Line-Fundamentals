@@ -1,23 +1,39 @@
  # This exercise uses only "echo" so working directory is not relevant
- # "Type" means type those keystrokes, see lesson content for details
+ # "Press" means press those keystrokes, see lesson content for details
 
 
+ # Step 1
 echo one two three four five/six/seven
 
- # Type: UP-ARROW Alt+B Alt+B Alt+B thousand SPACE ENTER 
+
+ # Step 2
+Press: up arrow Alt+B Alt+B Alt+B
+thousand
+Press: SPACE Enter 
 echo one two three four thousand five/six/seven
 
- 
- # Type: UP-ARROW Alt+Backspace Alt+B Alt+B ^Y / ENTER 
+
+ # Step 3
+Press: up arrow Alt+Backspace Alt+B Alt+B ^Y 
+/
+Press: Enter 
 echo one two three four thousand seven/five/six/ 
 
 
- # Type: UP-ARROW Alt+B Alt+B Alt+B Alt+B Alt+D END ^Y ENTER 
+ # Step 4
+Press: up arrow Alt+B Alt+B Alt+B Alt+B Alt+D End ^Y Enter 
 echo one two three four  seven/five/six/thousand 
 
 
- # Type: UP-ARROW Alt+B Alt+B Alt+B ^K Alt+B ^Y / ENTER 
+ # Step 5
+Press: up arrow Alt+B Alt+B Alt+B ^K Alt+B ^Y
+/
+Press: Enter 
 echo one two three four  five/six/thousand/seven/
 
- # Type: UP-ARROW Alt+B Alt+B Alt+B ^U Alt+F ^Y HOME echo SPACE ENTER 
+
+ # Step 6
+Press: up arrow Alt+B Alt+B Alt+B ^U Alt+F ^Y Home
+echo
+Press: SPACE Enter
 echo sixecho one two three four  five//thousand/seven/

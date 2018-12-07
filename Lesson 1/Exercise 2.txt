@@ -1,6 +1,3 @@
-
- # Commands for Exercise 2
-
  # Step 1
 cd Lesson1
 
@@ -14,34 +11,39 @@ mkdir canis/lupus
 mkdir canis/lupus/lupus 
 mkdir leopardus/colocolo/pajeros 
 
+
+ # Step 3
 mkdir -p leopardus/colocolo/pajeros 
 mkdir --parents panthera/tigris 
 mkdir panthera/leo 
 
 
- # Step 3
+ # Step 4
 tree 
 
 
- # Step 4
+ # Step 5
 rmdir canis/familiaris/ 
 rmdir canis 
 rmdir canis/lupus 
+
+
+ # Step 6
 rmdir canis/lupus/lupus 
 rmdir -p canis/lupus 
 
 
- # Step 5
+ # Step 7
 tree 
 
 
- # Step 6
+ # Step 8
 mkdir -p canis/lupus/lupus 
 mkdir -p canis/lupus/familiaris 
 ls 
 
 
- # Step 7
+ # Step 9
 touch canis/lupus/familiaris/dog.txt 
 touch panthera/leo/lion.txt 
 touch canis/lupus/lupus/wolf.txt 
@@ -50,55 +52,54 @@ touch leopardus/colocolo/pajeros/colocolo.txt
 tree 
 
 
- # Step 8
+ # Step 10
 mkdir dogs 
 cp canis/lupus/familiaris/dog.txt dogs/ 
 cp canis/lupus/lupus/wolf.txt dogs/ 
 tree 
 
 
- # Step 9
+ # Step 11
 mkdir cats 
 cp -r panthera cats 
 tree 
 
 
- # Step 10
+ # Step 12
 mkdir bigcats
 cp -r --verbose leopardus/ panthera/ bigcats
 tree bigcats 
 
 
- # Step 11
+ # Step 13
 cd .. 
-ls 
 mv animals beasts 
 cd beasts 
 ls 
 
 
- # Step 12
+ # Step 14
 mv dogs/dog.txt fido.txt 
 ls 
 mv fido.txt dogs/
 
 
- # Step 13
+ # Step 15
 mv canis dogs 
 tree dogs 
 
 
- # Step 14
+ # Step 16
 mkdir panthers 
 mv --verbose panthera panthers 
 tree panthers 
 
 
- # Step 15
+ # Step 17
 tree dogs 
 
 
- # Step 16
+ # Step 18
 rm dogs/fido.txt 
 rm dogs/wolf.txt 
 rm dogs/canis/lupus/familiaris/dog.txt 
@@ -106,13 +107,13 @@ rm dogs/canis/lupus/lupus/wolf.txt
 tree dogs 
 
 
- # Step 17
+ # Step 19
 ls 
 rm -r dogs 
 ls 
 
 
- # Step 18
+ # Step 20
 rm -r -i panthers 
 ls
 
@@ -120,11 +121,11 @@ rm -r -I bigcats
 ls 
 
 
- # Step 19
+ # Step 21
 rm -r -v panthers/ 
 
 
- # Step 20
+ # Step 22
 cd .. 
 ls 
 rm -r beasts 

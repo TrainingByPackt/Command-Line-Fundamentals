@@ -1,0 +1,47 @@
+ # Step 1
+head -n5 population.csv
+
+
+ # Step 2
+cut -f1 -d, population.csv >p1.txt
+cut -f3 -d, population.csv >p3.txt
+cut -f4 -d, population.csv >p4.txt
+
+
+ # Step 3
+paste -d$'/\t' p1.txt p3.txt p4.txt >p134.txt
+head -n5 p134.txt
+
+
+ # Step 4
+cut -f1 -d, land.csv >l1.txt
+cut -f3 -d, land.csv >l3.txt
+cut -f4 -d, land.csv >l4.txt
+paste -d$'/\t' l1.txt l3.txt l4.txt >l134.txt
+head -n 5 l134.txt
+
+
+ # Step 5
+tail -n+2 l134.txt | sort >land.txt
+tail -n+2 p134.txt | sort >pop.txt 
+
+ 
+ # Step 6
+join -t$'\t' --check-order -o auto -e 'UNKNOWN' -a1 -a2 land.txt pop.txt |less
+
+
+ # Step 7
+<names.tsv uniq -c | sort -n -r | head 
+ 
+
+ # Step 8
+<names.tsv uniq -c | sort -n -r >namecounts.txt
+
+
+ # Step 9
+grep -w 'SMITH' namecounts.txt | less
+
+
+ # Step 10
+grep -w 'SMITH' namecounts.txt | tac | head -n5
+

@@ -10,45 +10,54 @@ ls
 cd data 
 ls 
 
-ls taxaceae podocarpaceae 
-ls -l --color 
 
  # Step 4
+ls taxaceae podocarpaceae 
+
+
+ # Step 5
+ls -l --color 
+
+ 
+ # Step 6
 cd taxaceae 
 tree -d 
 
- # Step 5
+ # Step 7
 cd taxus
 cd - 
 
- # Step 6
+ # Step 8
 cd ../../.. 
 cd - 
 
- # Step 7
+ # Step 9
 cd 
 cd - 
 
- # Step 8
+ # Step 10
 pwd 
 
- # Step 9
+
+ # Step 11
 pushd taxus/baccata/ 
 pushd ../sumatrana/
 pushd ../../../pinaceae/cedrus/deodara/ 
 
- # Step 10
+
+ # Step 12
 popd 
 popd 
 popd 
 popd 
 
 
- # Step 11
+ # Step 13
 cd taxus/baccata 
 cat data.txt  
 
- # Step 12
+
+ # Step 14
 ls -l 
 less data.txt
 
