@@ -1,0 +1,19 @@
+#  Taxi Trip Analysis - Calculating Fare
+
+ # Step 1,2 No typing
+
+ 
+ # Step 3
+time head -n5000 nyc_taxi2.csv | ./taxi8.sh 
+
+
+ # Step 4
+cut -d, -f5 < nyc_taxi2.csv | tr -d '.' >nyc_taxi_fare.csv 
+
+
+ # Step 5-7 No typing
+
+  
+ # Step 8
+time ./taxi9.sh nyc_taxi2.csv 
+ 

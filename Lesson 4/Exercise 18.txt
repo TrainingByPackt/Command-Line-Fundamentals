@@ -1,19 +1,78 @@
-#  Taxi Trip Analysis - Calculating Fare
-
- # Step 1,2 No typing
-
- 
- # Step 3
-time head -n5000 nyc_taxi2.csv | ./taxi8.sh 
-
-
- # Step 4
-cut -d, -f5 < nyc_taxi2.csv | tr -d '.' >nyc_taxi_fare.csv 
-
-
- # Step 5-7 No typing
-
+ # Step 1 to 4
+function trip_duration()
+{
+  # Split the dates and times into an array, using space as the IFS
+  IFS=' '
+  local dt_start=( $1 )
+  local dt_stop=( $2 )
   
+  
+  # dt_start[1] and dt_stop contain the time value as HH:MM:SS
+  # Split the times into HH, MM and SS, using colon as the IFS
+  IFS=':'
+  local t_start=( ${dt_start[1]} )
+  local t_stop=( ${dt_stop[1]} )
+  
+  # Convert the HH MM SS to an absolute number of seconds
+  local n_start=$(( ${t_start[0]} * 3600 + ${t_start[1]} * 60 + ${t_start[2]} ))
+  local n_stop=$(( ${t_stop[0]} * 3600 + ${t_stop[1]} * 60 + ${t_stop[2]} ))
+  
+  echo $(( n_stop - n_start ))
+}
+
+
+ # Step 5
+trip_duration '2017-10-10 12:00:00' '2017-10-10 16:00:00' 
+trip_duration '2017-10-10 12:00:00' '2017-10-10 13:59:00' 
+trip_duration '2017-10-10 12:00:00' '2017-10-10 00:00:00' 
+
+
+ # Step 6
+./taxi1.sh '2017-10-10 12:00:00' '2017-10-10 00:00:00'
+
+
+ # Step 7 - No typing
+
+
  # Step 8
-time ./taxi9.sh nyc_taxi2.csv 
+./taxi2.sh <nyc_taxi.csv | head -n5
+head -n5 nyc_taxi.csv 
+./taxi2.sh <nyc_taxi.csv | head -n10 
+
+
+ # Step 9 - No typing
+
+
+ # Step 10
+./taxi3.sh <nyc_taxi.csv | head -n10 
+
+
+ # Step 11 - No typing
+
+
+ # Step 12
+time head -n5000 nyc_taxi.csv | ./taxi4.sh >test.txt 
+
+
+ # Step 13 - No typing
+
  
+ # Step 14
+time head -n5000 nyc_taxi.csv | ./taxi5.sh >test.txt 
+
+
+ # Step 15, 16 - No typing
+
+
+ # Step 17
+time head -n5000 nyc_taxi.csv | ./taxi6.sh >test.txt 
+
+
+ # Step 18
+./taxi6.sh <nyc_taxi.csv >nyc_taxi2.csv 
+head -n5 nyc_taxi2.csv 
+
+
+ # Step 19
+wc -l nyc_taxi.csv 
+wc -l nyc_taxi2.csv 

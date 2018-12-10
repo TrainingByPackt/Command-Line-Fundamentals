@@ -1,0 +1,15 @@
+#  Taxi Trip Analysis - Calculating Average Trip Speed
+
+
+ # Step 1
+ cut -d, -f4,6 < nyc_taxi2.csv | tr -d '.' >test.txt
+ head -n5 test.txt
+ 
+ 
+ #Step  2 to 5 - No Typing
+
+
+ # Step 6
+ ./taxi7.sh nyc_taxi2.csv
+ 
+ 
