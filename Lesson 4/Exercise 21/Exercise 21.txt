@@ -1,0 +1,129 @@
+ # Exercise 21: Chess Game Extractor—Counting Game Moves
+ 
+ # Step 1 to 2 - Write following function in editor, save as pgn_extract5.sh
+ 
+function filter_game()
+{
+  local ret=1
+  while read -r line
+  do
+    [[ $line =~ $1 ]] && ret=0
+
+    [[ $line =~ $1 ]] && echo "$line"
+    [[ $line =~ $regex_blank ]] && break
+  done
+  return $ret
+}
+
+
+ # Step 3
+regex='\[Result "(1-0)|(0-1)"\]'
+[[ '[Result "1-0"]' =~ $regex ]] && echo matched
+[[ '[Result "0-1"]' =~ $regex ]] && echo matched
+[[ '[Result "1/2-1/2"]' =~ $regex ]] && echo matched
+
+
+
+ # Step 4 - Add following code to pgn_extract5.sh
+for i in {1..30}
+do
+  filter_game '\[Result "(1-0)|(0-1)"\]'
+  read_chunk 0
+done
+ 
+
+ # Step 5
+./pgn_extract5.sh <games.pgn
+
+
+ # Step 6 to 8 - save following code as pgn_extract6.sh
+function read_moves()
+{ 
+  moves=''
+
+  while read -r line
+  do
+    [[ $line =~ $regex_blank ]] && return 0   
+    moves="${moves} ${line}"
+  done
+
+  return 1
+}
+
+filter_game '\[Result "(1-0)|(0-1)"\]'
+read_moves
+echo "$moves"
+
+ 
+ 
+ # Step 9
+./pgn_extract6.sh <games.pgn
+
+
+ # Step 10 to 11 - Add following code to pgn_extract6.sh and save as pgn_extract7.sh
+
+function count_moves()
+{
+  num_moves=$(tr -d -c '.' <<< "$moves" | wc -c)
+}
+
+for i in {1..3}
+do
+  filter_game '\[Result "(1-0)|(0-1)"\]'
+  read_moves
+  echo "$moves"
+
+  count_moves
+  echo "$num_moves" moves in game 
+  echo
+done
+
+ # Step 12
+./pgn_extract7.sh <games.pgn
+
+
+ # Step 13 to 22 - Add following code to pgn_extract7.sh and save as pgn_extract8.sh
+function filter_game()
+{
+  # Initially assume not found
+  found=0
+
+  while read -r line
+  do
+    [[ $line =~ $1 ]] && found=1
+    [[ $line =~ $regex_blank ]] && return 0
+  done
+  return 1
+}
+
+
+function show_games_won_in()
+{
+  local index=1
+  while filter_game '\[Result "(1-0)|(0-1)"\]' 
+  do
+    if [[ $found -eq 1 ]]
+    then
+      read_moves
+      count_moves
+      [[ $num_moves -le $1 ]] && echo "Game $index: $num_moves moves" && echo "$moves"
+    else 
+      read_chunk 0
+    fi
+    index=$(( index + 1 ))  
+  done
+}
+
+ # Step 23
+./pgn_extract8.sh 10 <games.pgn
+
+
+ # Step 24
+./pgn_extract4.sh -n 2296 <games.pgn
+ 
+ 
+ # Step 25 - Combine pgn_extract4.sh and pgn_extract8.sh into pgn_extract_final.sh 
+./pgn_extract_final.sh -m 8 <games.pgn
+./pgn_extract_final.sh -n 231 <games.pgn
+ 
+ 

@@ -1,0 +1,22 @@
+ # Exercise 19: Chess Game Extractor - Extracting a Desired Game 
+
+ # Step 1 
+function read_chunk()
+{
+  while read -r line
+  do
+    [[ $1 -eq 1 ]] && echo "$line"
+    [[ $line =~ $regex_blank ]] && return 0
+  done
+
+  return 1
+}
+
+
+ # Step 2 to 6 - Write script and save to pgn_extract2.sh
+ 
+ 
+ # Step 7 
+ 
+./pgn_extract2.sh 2 <test.pgn
+

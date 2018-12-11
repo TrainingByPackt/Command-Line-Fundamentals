@@ -1,0 +1,60 @@
+ # Exercise 20: Chess game extractor - Handling Options 
+
+ # Step 1 to 3 - Write script and save to pgn_extract3.sh
+ 
+ 
+ # Step 4
+./pgn_extract3.sh -m
+./pgn_extract3.sh -m 15
+./pgn_extract3.sh -n
+./pgn_extract3.sh -n 30
+./pgn_extract3.sh -x
+./pgn_extract3.sh
+
+
+ # Step 5
+./pgn_extract3.sh -m
+./pgn_extract3.sh -m 10
+./pgn_extract3.sh -n
+./pgn_extract3.sh -n 10
+./pgn_extract3.sh -x
+./pgn_extract3.sh
+
+
+ # Step 6 & 7 - Modify pgn_extract3.sh by adding the following and save as pgn_extract4.sh
+
+function show_nth_game()
+{
+  local count=1
+  local should_print=0
+  while [[ $count -le $1 ]]
+  do
+    [[ $count -eq $1 ]] && should_print=1
+    read_chunk $should_print || break 
+    read_chunk $should_print
+
+    count=$(( count + 1 ))
+    [[ $should_print -eq 1 ]] && break
+  done
+}
+
+getopts 'm:n:' opt 
+
+case $opt in
+  m)
+    echo Displaying games won in "$OPTARG" moves or less
+  ;;
+
+  n)
+    echo Displaying Game "#$OPTARG"
+    echo
+    show_nth_game "$OPTARG"
+  ;;
+esac
+
+
+ # Step 8
+./pgn_extract4.sh -n2 <test.pgn
+ 
+ 
+

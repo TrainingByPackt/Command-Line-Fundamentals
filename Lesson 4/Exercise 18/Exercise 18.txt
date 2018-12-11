@@ -1,0 +1,28 @@
+ # Exercise 18: Chess Game Extractor - Parsing A PGN File 
+
+
+ # Step 1 to 3 - write following script and save to pgn_extract1.sh
+
+#!/usr/bin/env bash 
+regex_blank="^[[:space:]]*$" 
+while read -r line 
+do 
+  [[ $1 -eq 1 ]] && echo "$line" 
+  [[ "$line" =~ $regex_blank ]] && break 
+done 
+
+ # Step 4 - Test with blank line
+./pgn_extract1.sh 0 
+./pgn_extract1.sh 1 
+
+
+ # Step 5 - Test with 1 nonblank and 1 blank line
+./pgn_extract1.sh 0 
+./pgn_extract1.sh 1 
+
+
+ # Step 6 - Test with many nonblank and 1 blank line
+./pgn_extract1.sh 0 
+./pgn_extract1.sh 1 
+
+
