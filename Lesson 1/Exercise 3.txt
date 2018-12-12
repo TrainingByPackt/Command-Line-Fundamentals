@@ -9,7 +9,6 @@ cd data2
  # Step 2
 Press: ^R
 animals
-Press: ^R^R Enter 
 
 
  # Step 3
