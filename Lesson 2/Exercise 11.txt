@@ -45,7 +45,7 @@ grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' | cut -d, --com
 
 
  # Step 12
-grep 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' >austria.txt
+grep -w 'Austria' <land.csv | grep -w '20[[:digit:]][[:digit:]]' >austria.txt
 cut -d,  -f3 <austria.txt >year.txt
 cut -d,  -f4 <austria.txt >percent.txt
 
