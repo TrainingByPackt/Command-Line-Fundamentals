@@ -17,7 +17,7 @@ Press: Tab
  # Step 3
 r
 Press: Tab Tab
-r 
+n 
 
 
 
