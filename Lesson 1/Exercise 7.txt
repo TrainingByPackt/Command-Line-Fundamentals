@@ -1,4 +1,3 @@
-# Make sure you're in the parent of the Lesson1 folder
 # "Press" means press those keystrokes, see lesson content for details
 # None of the auto completed commands are actually to be executed, 
 # Cancel each completed command with ^C or clear the command line before proceeding to the next "Press" step
@@ -6,16 +5,20 @@
 
  # Step 1
 ls --col
-Press: Tab 
-
+# Press: Tab 
+# The following command gets completed
+# ls --color
 
  # Step 2
 ls --re
-Press: Tab Tab
-
+# Press: Tab Tab
+# The following command options are shown
+# --recursive --reverse
+# The text "ls --re" is still on the command line - proceed to next step
 
  # Step 3
 c
-Press: Tab
-
+# Press: Tab
+# The option --recursive is completed and we get the following command
+# ls --recursive
 

@@ -1,4 +1,4 @@
- # Exercise 21: Chess Game Extractor—Counting Game Moves
+ # Exercise 21: Chess Game Extractor - Counting Game Moves
  
  # Step 1 to 2 - Write following function in editor, save as pgn_extract5.sh
  

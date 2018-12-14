@@ -29,7 +29,7 @@ function guess_it()
         return 0
       fi
     
-      [[ $guess -lt $answer ]] && echo "Your guess is lower than what I thought of, try again!"
+      [[ $guess -lt $answer ]] && echo "Your guess is lower than what I thought of, try again!"
       [[ $guess -gt $answer ]] && echo "Your guess is higher than what I thought of, try again!"
       
       count=$(( count + 1 ))
@@ -39,8 +39,9 @@ function guess_it()
     fi
   done
 
-  echo "Sorry, you used up 5 guesses!" 
-  echo "The number I had thought of was $answer"
+  echo "Sorry, you used up 5 guesses!" 
+  echo "The number I had thought of was $answer"
 }
 
 guess_it
+

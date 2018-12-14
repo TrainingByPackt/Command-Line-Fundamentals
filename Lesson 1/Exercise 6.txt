@@ -1,4 +1,3 @@
-# Make sure you're in the parent of the Lesson1 folder
 # "Press" means press those keystrokes, see lesson content for details
 # None of the auto completed commands are actually to be executed, 
 # Cancel each completed command with ^C or clear the command line before proceeding to the next "Press" step
@@ -6,17 +5,20 @@
 
  # Step 1
 les
-Press: Tab 
-
+# Press: Tab 
+# The following command gets completed
+# less
 
  # Step 2
 rmd 
-Press: Tab 
-
+# Press: Tab 
+# The following command appears 
+# rmdir 
 
  # Step 3
 r
-Press: Tab Tab
+# Press: Tab Tab
+# You are prompted if you wish to see all possibilities
 n 
 
 

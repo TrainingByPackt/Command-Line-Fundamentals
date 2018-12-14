@@ -1,18 +1,21 @@
-# In this activity, A list of keystrokes to accomplish the task is provided. Everything is to be typed literally
+# In this activity, You have to enter the a list of keystrokes and text to accomplish the task 
+# Text in capital letters indicates a keystroke
+# The spaces seen between each text string or keystrokes should not be typed
+# example "HOME echo" means press the HOME key and immediately type "echo" without a space
+# Actual space characters are indicated as "SPACE" in capitals
 
 data.txt
-Ctrl+W
+CTRL+W
 
-Pinaceae Cedrus Deodara
-HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+Pinaceae SPACE Cedrus SPACE Deodara
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / CTRL+Y ENTER
 
-Cupressaceae Thuja Aphylla
-HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+Cupressaceae SPACE Thuja SPACE Aphylla
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / CTRL+Y ENTER
 
-Taxaceae Taxus Baccata
-HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
+Taxaceae SPACE Taxus SPACE Baccata
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / CTRL+Y ENTER
 
-Podocarpaceae Podocarpus Alba
-HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / ^Y ENTER
-
+Podocarpaceae SPACE Podocarpus SPACE Alba
+HOME echo SPACE ALT+L DEL / ALT+L DEL / ALT+L / CTRL+Y ENTER
   

@@ -1,5 +1,8 @@
  # This exercise uses only "echo" so working directory is not relevant
  # "Press" means press those keystrokes, see lesson content for details
+ # The commands that result from pressing the keys are shown as comments with a # at the start of the line
+ # These commands are filled in by the shell history and editing and you are not supposed to type them
+ # Text that appears on lines without # are meant to be typed
 
 
  # Step 1
@@ -7,33 +10,37 @@ echo one two three four five/six/seven
 
 
  # Step 2
-Press: up arrow Alt+B Alt+B Alt+B
+# Press: up arrow Alt+B Alt+B Alt+B
 thousand
-Press: SPACE Enter 
-echo one two three four thousand five/six/seven
+# Press: SPACE Enter 
+# The following command executes
+# echo one two three four thousand five/six/seven
 
 
  # Step 3
-Press: up arrow Alt+Backspace Alt+B Alt+B ^Y 
+# Press: up arrow Alt+Backspace Alt+B Alt+B ^Y 
 /
-Press: Enter 
+# Press: Enter 
 echo one two three four thousand seven/five/six/ 
 
 
  # Step 4
-Press: up arrow Alt+B Alt+B Alt+B Alt+B Alt+D End ^Y Enter 
-echo one two three four  seven/five/six/thousand 
+# Press: up arrow Alt+B Alt+B Alt+B Alt+B Alt+D End ^Y Enter 
+# The following command executes
+# echo one two three four  seven/five/six/thousand 
 
 
  # Step 5
-Press: up arrow Alt+B Alt+B Alt+B ^K Alt+B ^Y
+# Press: up arrow Alt+B Alt+B Alt+B ^K Alt+B ^Y
 /
-Press: Enter 
-echo one two three four  five/six/thousand/seven/
+# Press: Enter 
+# The following command executes
+# echo one two three four  five/six/thousand/seven/
 
 
  # Step 6
-Press: up arrow Alt+B Alt+B Alt+B ^U Alt+F ^Y Home
+# Press: up arrow Alt+B Alt+B Alt+B ^U Alt+F ^Y Home
 echo
-Press: SPACE Enter
-echo sixecho one two three four  five//thousand/seven/
+# Press: SPACE Enter
+# The following command executes
+# echo sixecho one two three four  five//thousand/seven/

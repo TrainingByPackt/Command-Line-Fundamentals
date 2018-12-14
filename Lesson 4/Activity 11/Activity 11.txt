@@ -1,4 +1,4 @@
- # Activity 2 - Shell Scripting—NYC Taxi Trip Analysis 
+ # Activity 2 - Shell Scripting - NYC Taxi Trip Analysis
 
  # Solution 1
 ./taxi_act1.sh nyc_taxi2.csv

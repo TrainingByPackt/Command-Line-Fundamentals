@@ -7,8 +7,8 @@
 regex_blank="^[[:space:]]*$" 
 while read -r line 
 do 
-  [[ $1 -eq 1 ]] && echo "$line" 
-  [[ "$line" =~ $regex_blank ]] && break 
+  [[ $1 -eq 1 ]] && echo "$line"
+  [[ "$line" =~ $regex_blank ]] && break
 done 
 
  # Step 4 - Test with blank line
