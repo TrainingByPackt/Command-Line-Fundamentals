@@ -45,7 +45,7 @@ function filter_game()
 
 for i in {1..30}
 do
-  filter_game '\[Result "(1-0)|(0-1)"\]'
+  filter_game '\[Result "(1-0|0-1)"\]'
   read_chunk 0
 done
 

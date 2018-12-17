@@ -17,7 +17,7 @@ function filter_game()
 
 
  # Step 3
-regex='\[Result "(1-0)|(0-1)"\]'
+regex='\[Result "(1-0|0-1)"\]'
 [[ '[Result "1-0"]' =~ $regex ]] && echo matched
 [[ '[Result "0-1"]' =~ $regex ]] && echo matched
 [[ '[Result "1/2-1/2"]' =~ $regex ]] && echo matched
@@ -27,7 +27,7 @@ regex='\[Result "(1-0)|(0-1)"\]'
  # Step 4 - Add following code to pgn_extract5.sh
 for i in {1..30}
 do
-  filter_game '\[Result "(1-0)|(0-1)"\]'
+  filter_game '\[Result "(1-0|0-1)"\]'
   read_chunk 0
 done
  
@@ -50,7 +50,7 @@ function read_moves()
   return 1
 }
 
-filter_game '\[Result "(1-0)|(0-1)"\]'
+filter_game '\[Result "(1-0|0-1)"\]'
 read_moves
 echo "$moves"
 
@@ -69,7 +69,7 @@ function count_moves()
 
 for i in {1..3}
 do
-  filter_game '\[Result "(1-0)|(0-1)"\]'
+  filter_game '\[Result "(1-0|0-1)"\]'
   read_moves
   echo "$moves"
 
@@ -100,7 +100,7 @@ function filter_game()
 function show_games_won_in()
 {
   local index=1
-  while filter_game '\[Result "(1-0)|(0-1)"\]' 
+  while filter_game '\[Result "(1-0|0-1)"\]' 
   do
     if [[ $found -eq 1 ]]
     then

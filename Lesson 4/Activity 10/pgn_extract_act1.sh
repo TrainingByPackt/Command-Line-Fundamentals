@@ -117,7 +117,7 @@ function show_games_won_in()
   local index=1
 
   # While we have not reached the end of stream
-  while filter_game '\[Result "(1-0)|(0-1)"\]' 
+  while filter_game '\[Result "(1-0|0-1)"\]' 
   do
     # Check if this game has a result
     if [[ $found -eq 1 ]]

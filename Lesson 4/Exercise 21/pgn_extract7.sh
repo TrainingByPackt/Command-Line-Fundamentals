@@ -59,7 +59,7 @@ function count_moves()
 
 for i in {1..3}
 do
-  filter_game '\[Result "(1-0)|(0-1)"\]'
+  filter_game '\[Result "(1-0|0-1)"\]'
   read_moves
   echo "$moves"
   
