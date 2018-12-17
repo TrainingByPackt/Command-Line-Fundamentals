@@ -27,52 +27,56 @@ trip_duration '2017-10-10 12:00:00' '2017-10-10 13:59:00'
 trip_duration '2017-10-10 12:00:00' '2017-10-10 00:00:00' 
 
 
- # Step 6
+ # Step 6 - Edit the last line of the above function as the following and save it as taxi1.sh
+echo $(( ((n_stop - n_start) + 86400) % 86400 ))
+
+
+ # Step 7
 ./taxi1.sh '2017-10-10 12:00:00' '2017-10-10 00:00:00'
 
 
- # Step 7 - No typing
+ # Step 8 - No typing
 
 
- # Step 8
+ # Step 9
 ./taxi2.sh <nyc_taxi.csv | head -n5
 head -n5 nyc_taxi.csv 
 ./taxi2.sh <nyc_taxi.csv | head -n10 
 
 
- # Step 9 - No typing
+ # Step 10 - No typing
 
 
- # Step 10
+ # Step 11
 ./taxi3.sh <nyc_taxi.csv | head -n10 
 
 
- # Step 11 - No typing
+ # Step 12 - No typing
 
 
- # Step 12
+ # Step 13
 time head -n5000 nyc_taxi.csv | ./taxi4.sh >test.txt 
 
 
- # Step 13 - No typing
+ # Step 14 - No typing
 
  
- # Step 14
+ # Step 15
 time head -n5000 nyc_taxi.csv | ./taxi5.sh >test.txt 
 
 
- # Step 15, 16 - No typing
-
-
- # Step 17
-time head -n5000 nyc_taxi.csv | ./taxi6.sh >test.txt 
+ # Step 16, 17 - No typing
 
 
  # Step 18
+time head -n5000 nyc_taxi.csv | ./taxi6.sh >test.txt 
+
+
+ # Step 19
 ./taxi6.sh <nyc_taxi.csv >nyc_taxi2.csv 
 head -n5 nyc_taxi2.csv 
 
 
- # Step 19
+ # Step 20
 wc -l nyc_taxi.csv 
 wc -l nyc_taxi2.csv 

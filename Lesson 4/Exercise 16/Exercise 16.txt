@@ -6,7 +6,7 @@ function ucase()
 
 ucase hello world
 
- # Step 2
+ # Step 2 to 4
 function hf()
 {
   local a=0
@@ -29,7 +29,7 @@ function hf()
 hf 8
 
 
- # Step 3
+ # Step 5 to 6
 function greet()
 {
   local timestring='night'

@@ -43,5 +43,6 @@ function guess_it()
   echo "The number I had thought of was $answer"
 }
 
+ # Step 5
 guess_it
 
