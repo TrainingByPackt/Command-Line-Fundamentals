@@ -1,5 +1,9 @@
 grep -c -E '^([^aeiou][aeiou]){2}[^aeiou]$' <words.txt
+
 grep -c -E '^([^aeiou][aeiou])+[^aeiou]?$' <words.txt
+
 grep -c -E '^(.).\1$' <words.txt
+
 grep -c -E '([aeiou])\1' <words.txt
+
 grep  -E '^(.)(.).\2\1$' <words.txt
