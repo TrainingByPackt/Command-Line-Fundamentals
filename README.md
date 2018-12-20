@@ -25,22 +25,12 @@ For an optimal student experience, we recommend the following hardware configura
 * **Processor**: Any modern processor manufactured after 2010
 * **Memory**: 4 GB RAM
 * **Storage**: 4 GB available hard disk space
-* An Internet connection
-
-Processor: 
-Memory: 4 GB RAM
-Storage: 4 GB available hard disk space
-
 
 
 ### Software requirements
 You’ll also need the following software installed in advance:
 
 * Operating System: Any desktop Linux version or iOS, or Windows XP or later versions
-
-
-
-
 
 
 ### Note:
