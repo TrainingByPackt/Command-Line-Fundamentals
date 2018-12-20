@@ -1,18 +1,13 @@
-# Assuming we start from the the home directory in each case, and Lesson1 folder is in it
-
+# Assuming that the working directory is the home directory of the user
 
 # Solution 1
-cd ~
-cd Lesson1
-cd data
+cd Lesson1/data
 cd pinaceae/cedrus/deodara/
 less data.txt
 
 
 # Solution 2
-cd ~
-cd Lesson1/
-cd data/
+cd ../../..
 cd pinaceae/abies/pindrow/
 less data.txt
 # Type /derives from <ENTER> 
@@ -20,17 +15,13 @@ less data.txt
 
 
 # Solution 3
-cd ~
-cd Lesson1/
-cd data/
+cd ../../..
 cd taxaceae/taxus/
 tree -d
 
 
 # Solution 4
-cd ~
-cd Lesson1/
-cd data/
+cd ../..
 tree
 
 
