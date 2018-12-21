@@ -39,7 +39,8 @@ Since we are not dealing with source code, but interactive commands, each exerci
 * The exercises assume that the example user name is "robin", although this is not essential to their working.
 * Comments within the files are prefixed with " #", so that there are no issues if they get pasted into the terminal by mistake.
 * Please export HISTCONTROL=ignorespace so that the command history does not pick up any of the comments.
-* History needs to be maintained verbatim for some of the exercises
+* The command history needs to be maintained verbatim for some of the exercises - in other words some exercises depend on the commands that have been typed before in previous exercises
 * Each lesson has its own zip file of data to be extracted in the home directory
 * An Open Virtualization Appliance (built for use with Virtualbox) containing a Porteus Linux distro is provided in the repository
-* The VM image already contains the sample data as well as the snippets that are here.  
+* The VM image automatically downloads this repositories ZIP file and extracts it to the home directory of the guest user when it is first launched under the folders Snippets and Lesson1, Lesson2 etc.
+
