@@ -30,6 +30,8 @@ trip_duration '2017-10-10 12:00:00' '2017-10-10 00:00:00'
 
 
  # Step 6 - Edit the last line of the above function as the following and save it as taxi1.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+
 echo $(( ((n_stop - n_start) + 86400) % 86400 ))
 
 
@@ -37,7 +39,9 @@ echo $(( ((n_stop - n_start) + 86400) % 86400 ))
 ./taxi1.sh '2017-10-10 12:00:00' '2017-10-10 00:00:00'
 
 
- # Step 8 - No typing
+ # Step 8 - Create the taxi2.sh script as per the lesson 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+
 
 
  # Step 9
@@ -46,28 +50,32 @@ head -n5 nyc_taxi.csv
 ./taxi2.sh <nyc_taxi.csv | head -n10 
 
 
- # Step 10 - No typing
+ # Step 10 - Create the taxi3.sh script by modifying taxi2.sh as per the lesson 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
 
 
  # Step 11
 ./taxi3.sh <nyc_taxi.csv | head -n10 
 
 
- # Step 12 - No typing
+ # Step 12 - Create the taxi4.sh script as per the lesson 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
 
 
  # Step 13
 time head -n5000 nyc_taxi.csv | ./taxi4.sh >test.txt 
 
 
- # Step 14 - No typing
+ # Step 14 - Create the taxi5.sh script as per the lesson 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
 
  
  # Step 15
 time head -n5000 nyc_taxi.csv | ./taxi5.sh >test.txt 
 
 
- # Step 16, 17 - No typing
+ # Step 16, 17 - Create the taxi6.sh script as per the lesson 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
 
 
  # Step 18

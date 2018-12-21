@@ -3,6 +3,7 @@
 
 
  # Step 1 to 3 - Write script and save to pgn_extract3.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
  
  
  # Step 4
@@ -24,6 +25,7 @@
 
 
  # Step 6 & 7 - Modify pgn_extract3.sh by adding the following and save as pgn_extract4.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
 
 function show_nth_game()
 {

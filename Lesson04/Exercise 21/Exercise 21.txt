@@ -3,6 +3,8 @@
 
  
  # Step 1 to 2 - Write following function in editor, save as pgn_extract5.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+
  
 function filter_game()
 {
@@ -39,6 +41,8 @@ done
 
 
  # Step 6 to 8 - save following code as pgn_extract6.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+ 
 function read_moves()
 { 
   moves=''
@@ -63,6 +67,8 @@ echo "$moves"
 
 
  # Step 10 to 11 - Add following code to pgn_extract6.sh and save as pgn_extract7.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+ 
 
 function count_moves()
 {
@@ -85,6 +91,8 @@ done
 
 
  # Step 13 to 22 - Add following code to pgn_extract7.sh and save as pgn_extract8.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+ 
 function filter_game()
 {
   # Initially assume not found
@@ -125,6 +133,8 @@ function show_games_won_in()
  
  
  # Step 25 - Combine pgn_extract4.sh and pgn_extract8.sh into pgn_extract_final.sh 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
+
 ./pgn_extract_final.sh -m 8 <games.pgn
 ./pgn_extract_final.sh -n 231 <games.pgn
  

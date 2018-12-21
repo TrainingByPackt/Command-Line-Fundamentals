@@ -15,6 +15,7 @@ function read_chunk()
 
 
  # Step 2 to 6 - Write script and save to pgn_extract2.sh
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
  
  
  # Step 7 

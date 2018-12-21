@@ -6,7 +6,8 @@
  head -n5 test.txt
  
  
- #Step  2 to 5 - No Typing
+ #Step  2 to 5 - Create the taxi7.sh script as per the lesson 
+ # Before moving to the next step, remember to run the command chmod u+x on it to make it executable
 
 
  # Step 6
