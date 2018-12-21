@@ -20,8 +20,9 @@ thousand
  # Step 3
 # Press: up arrow Alt+Backspace Alt+B Alt+B ^Y 
 /
-# Press: Enter 
-echo one two three four thousand seven/five/six/ 
+# Press: Enter
+# The following command executes
+# echo one two three four thousand seven/five/six/ 
 
 
  # Step 4
