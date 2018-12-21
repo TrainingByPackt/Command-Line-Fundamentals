@@ -13,7 +13,7 @@ By the end of this course, you'll have explored the basics of shell scripting, w
 
 ## What you will learn
 * Use the Bash shell to run commands
-* Implement basic Unix utilities such as cat, tr, sort, and uniq
+* Utilize basic Unix utilities such as cat, tr, sort, and uniq
 * Explore shell wildcards to manage groups of files
 * Apply useful keyboard shortcuts in shell
 * Employ redirection and pipes to process data
