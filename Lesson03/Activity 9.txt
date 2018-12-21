@@ -12,7 +12,7 @@ echo '\$\{NAME:{$LEN..0}\:1\}'
 
 eval echo '\$\{NAME:{$LEN..0}\:1\}'
 
-echo '\\$\\{NAME:{$LEN..1}\\:0\\}'
+echo '\\$\\{NAME:{$LEN..0}\\:1\\}'
 
 eval echo '\\$\\{NAME:{$LEN..0}\\:1\\}'
 
