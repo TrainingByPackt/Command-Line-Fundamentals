@@ -16,7 +16,7 @@ rmd
 # rmdir 
 
  # Step 3
-r
+g
 # Press: Tab Tab
 # You are prompted if you wish to see all possibilities
 n 
