@@ -1,4 +1,6 @@
  # Exercise 20: Chess game extractor - Handling Options 
+ # Make sure you are in the ~/Lesson4 folder
+
 
  # Step 1 to 3 - Write script and save to pgn_extract3.sh
  

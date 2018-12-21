@@ -1,9 +1,10 @@
  # Activity 2 - Shell Scripting - NYC Taxi Trip Analysis
+ # Make sure you are in the ~/Lesson4 folder
 
  # Solution 1
 ./taxi_act1.sh nyc_taxi2.csv
 
- # Solution 2
+ # Solution 2 - Note the use of input redirection rather than an argument
 ./taxi_act2.sh <nyc_taxi2.csv
 
  # Solution 3

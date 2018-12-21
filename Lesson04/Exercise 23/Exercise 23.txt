@@ -1,5 +1,5 @@
 #  Taxi Trip Analysis - Calculating Average Trip Speed
-
+#  Make sure you are in the ~/Lesson4 folder
 
  # Step 1
  cut -d, -f4,6 < nyc_taxi2.csv | tr -d '.' >test.txt

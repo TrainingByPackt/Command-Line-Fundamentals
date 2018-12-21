@@ -1,7 +1,7 @@
  # Exercise 18: Chess Game Extractor - Parsing A PGN File 
+ # Make sure you are in the ~/Lesson4 folder
 
-
- # Step 1 to 3 - write following script and save to pgn_extract1.sh
+ # Step 1 to 3 - write following script (all the lines upto but not including Step 4) and save to pgn_extract1.sh
 
 #!/usr/bin/env bash 
 regex_blank="^[[:space:]]*$" 

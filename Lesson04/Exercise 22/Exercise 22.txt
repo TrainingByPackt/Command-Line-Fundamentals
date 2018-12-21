@@ -1,3 +1,5 @@
+#  Make sure you are in the ~/Lesson4 folder
+
  # Step 1 to 4
 function trip_duration()
 {

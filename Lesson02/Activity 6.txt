@@ -1,3 +1,5 @@
+# Make sure you are in the ~/Lesson2 folder
+
 tail -n+2 land.csv | sort >sorted.txt
 
 cat -n sorted.txt >numbered.txt

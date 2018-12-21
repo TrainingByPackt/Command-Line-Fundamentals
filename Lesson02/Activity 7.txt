@@ -1,3 +1,5 @@
+# Make sure you are in the ~/Lesson2 folder
+
 grep 'Australia' land.csv >australia.txt
 
 sort -o australia.txt -k4 -t, -n australia.txt

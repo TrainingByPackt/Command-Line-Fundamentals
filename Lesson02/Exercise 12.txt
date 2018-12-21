@@ -1,4 +1,6 @@
  # Step 1
+ # Since we are continuing from the previous exercise, please make sure you are in the ~/Lesson2 directory 
+ # If necessary use the command "cd ~/Lesson2" before continuing
 head -n5 population.csv
 
 

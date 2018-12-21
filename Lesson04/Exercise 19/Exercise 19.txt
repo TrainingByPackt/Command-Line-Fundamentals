@@ -1,4 +1,5 @@
  # Exercise 19: Chess Game Extractor - Extracting a Desired Game 
+ # Make sure you are in the ~/Lesson4 folder
 
  # Step 1 
 function read_chunk()
