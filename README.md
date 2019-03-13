@@ -44,3 +44,12 @@ Since we are not dealing with source code, but interactive commands, each exerci
 * An Open Virtualization Appliance (built for use with Virtualbox) containing a Porteus Linux distro is provided in the repository
 * The VM image automatically downloads this repositories ZIP file and extracts it to the home directory of the guest user when it is first launched under the folders Snippets and Lesson1, Lesson2 etc.
 
+
+### Important:
+
+The VM image is an OVA file of 250 MB stored via Git LFS - it is not included within the archive if you download the repository as a ZIP file from the github link.
+
+To get the file do either of the following:
+* Use `git clone git@github.com:TrainingByPackt/Command-Line-Fundamentals.git` to clone the repository, and git will download it along with the other files in the repository
+* After downloading and extracting the ZIP file from github, download the OVA file from https://github.com/TrainingByPackt/Command-Line-Fundamentals/blob/master/Packt-CLI.ova directly
+
