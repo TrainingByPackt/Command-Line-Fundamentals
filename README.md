@@ -53,3 +53,10 @@ To get the file do either of the following:
 * Use `git clone git@github.com:TrainingByPackt/Command-Line-Fundamentals.git` to clone the repository, and git will download it along with the other files in the repository
 * After downloading and extracting the ZIP file from github, download the OVA file from https://github.com/TrainingByPackt/Command-Line-Fundamentals/blob/master/Packt-CLI.ova directly
 
+
+Since Packt Publishing has not been able to resolve the issue with github quota and they are not responsive to my communications - I have uploaded the OVA file here
+https://www.dropbox.com/s/ks9f7kcdsq7skhq/Packt-CLI.ova?dl=0
+
+
+
+
